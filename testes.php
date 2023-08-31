@@ -1,6 +1,7 @@
 <?php
 
 use Alura\DesignPattern\CalculadordeImpostos;
+use Alura\DesignPattern\Impostos\Icms;
 use Alura\DesignPattern\Orcamento;
 
 require_once 'vendor/autoload.php';
@@ -10,4 +11,4 @@ $orcamento = new Orcamento();
 
 $orcamento->valor = 100;
 
-echo $calculadora->calcula($orcamento, 'ISS');
+echo $calculadora->calcula($orcamento, new Icms());
