@@ -4,7 +4,7 @@ namespace Alura\DesignPattern\AcoesGerarPedido;
 
 use Alura\DesignPattern\Pedido;
 
-class LogGerarPedido
+class LogGerarPedido implements AcaoAposGerarPedido
 {
     public function executaAcao(Pedido $pedido): void
     {
